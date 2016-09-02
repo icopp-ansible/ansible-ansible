@@ -1,0 +1,6 @@
+---
+- name: Install Ansible
+  package:
+    name: ansible
+    state: latest
+  when: ansible_os_family == "Darwin"
